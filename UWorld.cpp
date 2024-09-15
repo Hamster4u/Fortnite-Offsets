@@ -1,0 +1,40 @@
+// Inheritance: UObject
+namespace UWorld {
+	constexpr auto PersistentLevel = 0x30; // ULevel*
+	constexpr auto NetDriver = 0x38; // UNetDriver*
+	constexpr auto LineBatcher = 0x40; // ULineBatchComponent*
+	constexpr auto PersistentLineBatcher = 0x48; // ULineBatchComponent*
+	constexpr auto ForegroundLineBatcher = 0x50; // ULineBatchComponent*
+	constexpr auto NetworkManager = 0x58; // AGameNetworkManager*
+	constexpr auto PhysicsCollisionHandler = 0x60; // UPhysicsCollisionHandler*
+	constexpr auto ExtraReferencedObjects = 0x68; // TArray<UObject*>
+	constexpr auto PerModuleDataObjects = 0x78; // TArray<UObject*>
+	constexpr auto StreamingLevels = 0x88; // TArray<ULevelStreaming*>
+	constexpr auto StreamingLevelsToConsider = 0x98; // FStreamingLevelsToConsider
+	constexpr auto ServerStreamingLevelsVisibility = 0xc0; // AServerStreamingLevelsVisibility*
+	constexpr auto StreamingLevelsPrefix = 0xc8; // FString
+	constexpr auto CurrentLevelPendingVisibility = 0xe0; // ULevel*
+	constexpr auto CurrentLevelPendingInvisibility = 0xe8; // ULevel*
+	constexpr auto DemoNetDriver = 0xf0; // UDemoNetDriver*
+	constexpr auto MyParticleEventManager = 0xf8; // AParticleEventManager*
+	constexpr auto DefaultPhysicsVolume = 0x100; // APhysicsVolume*
+	constexpr auto bAreConstraintsDirty = 0x13e; // bool
+	constexpr auto NavigationSystem = 0x150; // UNavigationSystemBase*
+	constexpr auto AuthorityGameMode = 0x158; // AGameModeBase*
+	constexpr auto GameState = 0x160; // AGameStateBase*
+	constexpr auto AISystem = 0x168; // UAISystemBase*
+	constexpr auto AvoidanceManager = 0x170; // UAvoidanceManager*
+	constexpr auto Levels = 0x178; // TArray<ULevel*>
+	constexpr auto LevelCollections = 0x188; // TArray<FLevelCollection>
+	constexpr auto OwningGameInstance = 0x1d8; // UGameInstance*
+	constexpr auto ParameterCollectionInstances = 0x1e0; // TArray<UMaterialParameterCollectionInstance*>
+	constexpr auto CanvasForRenderingToTarget = 0x1f0; // UCanvas*
+	constexpr auto CanvasForDrawMaterialToRenderTarget = 0x1f8; // UCanvas*
+	constexpr auto PhysicsField = 0x270; // UPhysicsFieldComponent*
+	constexpr auto ComponentsThatNeedPreEndOfFrameSync = 0x278; // TSet<UActorComponent*>
+	constexpr auto ComponentsThatNeedEndOfFrameUpdate = 0x2c8; // TArray<UActorComponent*>
+	constexpr auto ComponentsThatNeedEndOfFrameUpdate_OnGameThread = 0x2d8; // TArray<UActorComponent*>
+	constexpr auto WorldComposition = 0x720; // UWorldComposition*
+	constexpr auto ContentBundleManager = 0x728; // UContentBundleManager*
+	constexpr auto PSCPool = 0x7f0; // FWorldPSCPool
+}
